@@ -1,0 +1,245 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  scrollbar-width: 0px;
+}
+
+::-webkit-scrollbar {
+  width: 0px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #172d40; /* Set the color of the thumb */
+  border-radius: 6px; /* Set the border radius of the thumb */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #afdafb; /* Set the color of the track */
+}
+
+/* For Firefox */
+scrollbar {
+  width: 5px; /* Set the width of the scrollbar */
+}
+
+/*on scroll*/
+
+.header-transition {
+  padding: 0;
+}
+
+.headertop {
+  width: 100%;
+  background-color: white;
+  color: black;
+  border-bottom: 1px solid yellowgreen;
+  position: fixed;
+}
+
+.course-box:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.course-box:hover #courses-overlay {
+  display: flex;
+  background-color: #0000006f;
+  color: white;
+  font-size: large;
+}
+
+header {
+  padding: 20px;
+  background: white;
+  transition: all 500ms;
+}
+
+.container-1 {
+  background-image: url("./Assets/ghanass_background2.jpg");
+  object-fit: cover;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  color: whitesmoke;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+  background-size: cover;
+}
+
+.container-1::before {
+  content: "";
+  /* border-radius: 20px; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0000006f;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.parallax-container {
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth; /* Add smooth scrolling */
+}
+
+.parallax-section {
+}
+
+.parallax-section {
+  transition: transform 1s; /* Add transition for a stutter effect */
+  background-attachment: fixed;
+}
+
+.cover-container {
+  background-image: url("./Assets/jarvis_nero.jpeg");
+  background-size: cover;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  background-repeat: no-repeat;
+}
+
+.filter-box {
+  position: absolute;
+  background-color: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* z-index: 20; */
+  width: 70%;
+  height: fit-content;
+  padding: 20px;
+  text-align: center;
+}
+
+div.overlay {
+  background: #ffffff;
+}
+
+
+
+/* animation */
+
+.pull_down_menu {
+
+}
+
+
+.pull_down_menu .pulled {
+  transform: translateY('100%');
+}
+
+
+
+
+
+
+
+
+
+/* General style */
+
+.background {
+  background-size: cover;
+  position: relative;
+}
+
+.background::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* z-index: -2; */
+  background-color: rgba(0, 0, 0, 0.431);
+}
+
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}

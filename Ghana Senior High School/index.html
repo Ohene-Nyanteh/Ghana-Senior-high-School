@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GHANAS</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="w-full h-auto">
+    <div
+      id="menu"
+      class="fixed p-20 h-screen overlay w-full left-0 z-20 top-0 hidden gap-6 flex-col items-center"
+    >
+      <div class="flex justify-between w-full">
+        <h3 class="text-3xl">Explore</h3>
+        <a
+          href="javascript:void(0)"
+          class="closebtn w-6 h-6"
+          onclick="closeNav()"
+          >&times;</a
+        >
+      </div>
+      <div class="h-full flex justify-between w-full">
+        <div class="flex flex-col gap-4">
+          <h3 class="text-2xl">NAVIGATION</h3>
+          <div class="flex flex-col gap-4">
+            <a href="#" class="hover:text-green-600">Home</a>
+            <a href="./Pages/Navigation/About.html" class="hover:text-green-600">About</a>
+            <a href="./Pages/Navigation/Parents.html" class="hover:text-green-600">Parents</a>
+            <a href="./Pages/Navigation/Entertainment.html" class="hover:text-green-600">Entertainment</a>
+            <a href="./Pages/Navigation/Sports.html" class="hover:text-green-600">Sports</a>
+            <a href="./Pages/Navigation/Administration.html" class="hover:text-green-600">Administration</a>
+          </div>
+        </div>
+        <div class="flex flex-col gap-4">
+          <h3 class="text-2xl">FEATURES</h3>
+          <div class="flex flex-col gap-4">
+            <a href="./Pages/Features/Facilities.html" class="hover:text-green-600">Facilities</a>
+            <a href="./Pages/Features/Department.html" class="hover:text-green-600">Department</a>
+            <a href="./Pages/Features/Vision.html" class="hover:text-green-600">Vision</a>
+            <a href="./Pages/Features/History.html" class="hover:text-green-600">History</a>
+          </div>
+        </div>
+        <div class="flex flex-col gap-4">
+          <h3 class="text-2xl">Courses</h3>
+          <div class="flex flex-col gap-4">
+            <a href="./Pages/Courses/General Science.html" class="hover:text-green-600">General Science</a>
+            <a href="./Pages/Courses/Visual Arts.html" class="hover:text-green-600">Visual Arts</a>
+            <a href="./Pages/Courses/General Arts.html" class="hover:text-green-600">General Arts</a>
+            <a href="./Pages/Courses/Business.html" class="hover:text-green-600">Business</a>
+            <a href="./Pages/Courses/Home Economics.html" class="hover:text-green-600">Home Economics</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="w-full h-screen" id="header">
+      <div class="container-1 scrolled" id="container-1">
+        <div
+          id="navbar"
+          class="relative w-full p-2 flex justify-between items-center z-10 h-fit"
+        >
+          <!--Hidden Menu-->
+          <div class="px-6">
+            <button
+              type="button"
+              class="flex gap-2 px-8 py-4 rounded-full bg-green-500"
+              onclick="openMenu()"
+            >
+              <svg
+                class="font-bold"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="white"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M23.5 6C23.7761 6 24 5.77614 24 5.5C24 5.22386 23.7761 5 23.5 5L0.5 5C0.223858 5 0 5.22386 0 5.5C0 5.77614 0.223858 6 0.5 6L23.5 6ZM24 12.5C24 12.7761 23.7761 13 23.5 13L0.5 13C0.223858 13 0 12.7761 0 12.5C0 12.2239 0.223858 12 0.5 12L23.5 12C23.7761 12 24 12.2239 24 12.5ZM24 19.5C24 19.7761 23.7761 20 23.5 20L0.5 20C0.223858 20 0 19.7761 0 19.5C0 19.2239 0.223858 19 0.5 19L23.5 19C23.7761 19 24 19.2239 24 19.5Z"
+                ></path>
+              </svg>
+              <span>Explore Sections</span>
+            </button>
+          </div>
+          <img src="./Assets/ghanass_logo.jpg" width="70px" height="70px" />
+          <div class="flex gap-3 h-fit w-fit font-seminbold text-lg">
+            <a href="" class="hover:text-green-500">Home</a>
+            <a href="" class="hover:text-green-500">Educational Resources</a>
+            <a href="" class="hover:text-green-500">Contact Us</a>
+          </div>
+        </div>
+        <div
+          class="relative w-full h-full flex flex-col justify-center items-center self-center"
+        >
+          <div class="flex flex-col items-center gap-6">
+            <div class="flex items-center flex-col gap-4">
+              <div id="point"></div>
+              <h1 class="text-7xl font-extrabold">GHANA SENIOR HIGH SCHOOL</h1>
+              <span class="italic text-xl">Pro Patria</span>
+            </div>
+            <button
+              type="button"
+              class="px-10 py-4 border rounded-full w-fit h-fit border-green-400 hover:bg-green-600 text-xl"
+            >
+              Visit Us >>
+            </button>
+          </div>
+          <div class="z-20 p-2 absolute bottom-28 animate-bounce">
+            <svg
+              stroke="white"
+              fill="white"
+              stroke-width="0"
+              viewBox="0 0 512 512"
+              height="2.5em"
+              width="2.5em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zM212 140v116h-70.9c-10.7 0-16.1 13-8.5 20.5l114.9 114.3c4.7 4.7 12.2 4.7 16.9 0l114.9-114.3c7.6-7.6 2.2-20.5-8.5-20.5H300V140c0-6.6-5.4-12-12-12h-64c-6.6 0-12 5.4-12 12z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+ 
+    </header>
+
+    <main class="h-auto w-full pt-20 flex flex-col gap-16">
+      <!--Courses-->
+      <div class="w-full px-20 flex flex-col gap-6">
+        <h2 class="text-4xl text-center">Courses</h2>
+        <span class="text-center italic"
+          >Ghana Senior High School offer 5 distinct coures, each with their own
+          flavor and aim</span
+        >
+        <div class="flex justify-between">
+          <div
+            class="relative w-auto h-auto course-box border-2 border-green-600"
+          >
+            <div class="flex flex-col">
+              <img
+                src="./Assets/emrss.jpeg"
+                width="300"
+                height="400"
+                class="course-box"
+              />
+              <span class="p-2 w-full text-center">Visual Arts</span>
+            </div>
+            <div
+              id="courses-overlay"
+              class="absolute top-0 hidden justify-center items-center h-full w-full"
+            >
+              <button
+                type="button"
+                class="px-6 py-2 hover:bg-green-500 rounded-full border border-green-600"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+          <div class="relative w-auto h-auto course-box border-2">
+            <div class="flex flex-col border border-green-600">
+              <img
+                src="./Assets/ghanass_background.jpg"
+                width="300"
+                height="400"
+                class="course-box"
+              />
+              <span class="p-2 w-full text-center border border-green-600"
+                >General Arts</span
+              >
+            </div>
+            <div
+              id="courses-overlay"
+              class="absolute top-0 hidden justify-center items-center h-full w-full"
+            >
+              <button
+                type="button"
+                class="px-6 py-2 hover:bg-green-500 rounded-full border border-green-600"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+          <div class="relative w-auto h-auto course-box">
+            <div class="flex flex-col border border-green-600">
+              <img
+                src="./Assets/majesty_Afro.jpeg"
+                width="300"
+                height="400"
+                class="course-box"
+              />
+              <span class="p-2 w-full text-center border border-green-600"
+                >Science</span
+              >
+            </div>
+            <div
+              id="courses-overlay"
+              class="absolute top-0 hidden justify-center items-center h-full w-full"
+            >
+              <button
+                type="button"
+                class="px-6 py-2 hover:bg-green-500 rounded-full border border-green-600"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+          <div class="relative w-auto h-auto course-box">
+            <div class="flex flex-col border border-green-600">
+              <img
+                src="./Assets/1709749014659.jpg"
+                width="300"
+                height="400"
+                class="course-box"
+              />
+              <span class="p-2 w-full text-center border border-green-600"
+                >Agriculture</span
+              >
+            </div>
+            <div
+              id="courses-overlay"
+              class="absolute top-0 hidden justify-center items-center h-full w-full"
+            >
+              <button
+                type="button"
+                class="px-6 py-2 hover:bg-green-500 rounded-full border border-green-600"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Goals & Vision-->
+      <div
+        class="w-full px-20 parallax-section h-screen flex flex-col items-center justify-center"
+      >
+        <h2 class="text-3xl text-center font-bold">Vision & Goal</h2>
+        <div class="w-full h-auto py-8 flex gap-6 items-center">
+          <img
+            src="./Assets/prefects.jpeg"
+            width="600"
+            height="500"
+            class="rounded-md border shadow-md"
+          />
+          <div class="flex flex-col gap-4">
+            <h2 class="text-3xl">Our Vision</h2>
+            <span class="flex flex-col gap-4 italic">
+              In our pursuit of educational excellence, our school envisions a
+              future where greatness is not just a goal but a continuous
+              journey. Our vision is centered around cultivating an environment
+              that fosters the growth of exceptional educators — individuals who
+              inspire, innovate, and instill a lifelong love for learning. We
+              aspire to be a beacon of educational empowerment, dedicated to
+              nurturing teachers who are not merely instructors but mentors,
+              guiding students to realize their full potential. Our vision
+              extends beyond traditional teaching methodologies; we aim to
+              create an ecosystem where educators are empowered to adapt,
+              evolve, and integrate cutting-edge pedagogies into their
+              classrooms.
+              <br />
+              <button
+                class="px-2 py-1 border rounded-full w-fit h-fit border-green-400 hover:bg-green-600"
+              >
+                Read More
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!--Parallax-->
+      <div class="parallax-container snap-y">
+        <section
+          class="parallax-section snap-center p-20 bg-blue-500 h-screen flex items-center gap-6"
+        >
+          <img
+            src="./Assets/headmistress.jpg"
+            width="400"
+            height="500"
+            class="rounded-lg"
+          />
+          <div class="flex flex-col gap-6">
+            <h2 class="text-6xl font-bold">Our Headmistress</h2>
+            <span class="flex text-xl flex-col gap-4 italic">
+              Our esteemed headmistress stands as a paragon of educational
+              excellence, demonstrating an unparalleled commitment to her role.
+              With a profound understanding of pedagogy, she orchestrates an
+              environment of inspiration and learning. Her leadership is marked
+              by unwavering dedication, fostering a culture where both students
+              and faculty thrive. A visionary, she implements innovative
+              strategies, ensuring the school remains at the forefront of
+              academic achievement. Her approach, marked by empathy and
+              decisiveness, creates a harmonious community. Her exceptional work
+              goes beyond administration; it shapes a future where education is
+              transformative, leaving an indelible mark on the hearts and minds
+              of those under her guidance.
+              <br />
+              <button
+                class="px-2 py-1 border-2 rounded-full w-fit h-fit border-green-400 hover:bg-green-600"
+              >
+                Read More
+              </button>
+            </span>
+          </div>
+        </section>
+        <section
+          class="content-section snap-center h-screen flex items-center justify-center text-black text-3xl flex-col gap-6 relative"
+        >
+          <div class="cover-container w-full h-full"></div>
+          <div
+            class="shadow-lg filter-box rounded-lg flex flex-col gap-8 items-center"
+          >
+            <h3 class="text-7xl">Try Us Out</h3>
+            <span class="italic text-lg">
+              "Try us out and embark on a transformative educational journey!
+              Our school is a vibrant community dedicated to fostering academic
+              excellence, personal growth, and lifelong learning. With
+              passionate educators, state-of-the-art facilities, and a nurturing
+              environment, we prioritize individualized attention, ensuring
+              every student thrives. Our innovative curriculum, enriched with
+              extracurricular activities, prepares students for success in a
+              dynamic world. Join a supportive community that values diversity,
+              creativity, and character development. We promise an experience
+              that goes beyond academics, shaping well-rounded individuals
+              poised for a bright future. Discover the difference – choose our
+              school as the stepping stone to a world-class education."
+            </span>
+            <button
+              class="px-4 py-2 border-2 rounded-full w-fit h-fit border-green-400 hover:bg-green-600 text-lg"
+            >
+              Join US!
+            </button>
+          </div>
+        </section>
+        <section
+          class="parallax-section snap-center p-20 bg-violet-500 h-screen flex items-center gap-6"
+        >
+          <img
+            src="./Assets/majesty_Afro.jpeg"
+            width="400"
+            height="500"
+            class="rounded-lg"
+          />
+          <div class="flex flex-col gap-6">
+            <h2 class="text-6xl font-bold">Our Departments</h2>
+            <span class="flex text-xl flex-col gap-4 italic">
+              Within our educational ecosystem, diverse and specialized
+              departments converge to sculpt a comprehensive learning
+              experience. The Academic Department, the nucleus of intellectual
+              growth, orchestrates rigorous curricula, fostering a culture of
+              inquiry and discovery. The Arts Department ignites creativity,
+              showcasing talents through vibrant expressions. Scientific
+              exploration takes root in the well-equipped Science Department,
+              while the Humanities Department nurtures critical thinking and
+              social awareness. Our Sports Department cultivates teamwork,
+              discipline, and physical prowess. Technology finds its domain in
+              the IT Department, shaping digital literacy. Together, these
+              departments form a cohesive tapestry, seamlessly weaving
+              knowledge, creativity, and skills, ensuring our students emerge as
+              well-rounded, adaptable individuals ready to face the complexities
+              of the modern world.
+              <br />
+              <button
+                class="px-2 py-1 border-2 rounded-full w-fit h-fit border-green-400 hover:bg-green-600"
+              >
+                Read More
+              </button>
+            </span>
+          </div>
+        </section>
+        <!-- Add more sections as needed -->
+        <section
+          class="parallax-section snap-center p-20 bg-blue-500 h-screen flex items-center gap-6 justify-center"
+        >
+          <div
+            class="flex flex-col items-center justify-center gap-8 w-[80%] bg-white shadow-lg p-6 rounded-lg"
+          >
+            <h3 class="text-5xl font-bold text-center">Contact Us!</h3>
+            <div class="flex gap-8 w-full">
+              <div class="flex w-full flex-col gap-6">
+                <button class="border w-full bg-blue-600 rounded px-4 py-2">
+                  Facebook
+                </button>
+                <button class="border w-full bg-white rounded px-4 py-2">
+                  Instagram
+                </button>
+                <button class="border w-full bg-red-300 rounded px-4 py-2">
+                  Email
+                </button>
+              </div>
+              <div class="w-1 h-40 border border-black"></div>
+              <div class="w-full">
+                <input
+                  type="text"
+                  name="username"
+                  placeholder="Username"
+                  required
+                  class="w-full p-2 mb-2 rounded border border-gray-300"
+                />
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="Password"
+                  required
+                  class="w-full p-2 mb-4 rounded border border-gray-300"
+                />
+                Info Added: <input type="checkbox" />
+                <input
+                  type="submit"
+                  value="Login"
+                  class="w-full p-2 bg-green-500 text-white rounded cursor-pointer hover:bg-green-600"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="flex justify-center bg-green-500 p-4">
+      <small>Ghana Senior High School &copy;2024</small>
+    </footer>
+  </body>
+</html>
